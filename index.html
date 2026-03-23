@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pushkal Sanjay Naidu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Cursor glow effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">PS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in">Hello, I'm</p>
+        <h1 class="hero-name animate-in delay-1">Pushkal Sanjay<br /><span class="accent">Naidu</span></h1>
+        <p class="hero-tagline animate-in delay-2">Full Stack Developer &amp; CS Undergraduate</p>
+        <p class="hero-description animate-in delay-3">
+          I build modern, scalable web applications with clean code and thoughtful design.
+          Passionate about turning complex problems into elegant digital solutions.
+        </p>
+        <div class="hero-cta animate-in delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-social animate-in delay-4">
+          <a href="https://github.com/PushkalMatcha" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual animate-in delay-2">
+        <div class="hero-card">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">pushkal.js</span>
+          </div>
+          <div class="terminal-body">
+            <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Pushkal Sanjay Naidu"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Next.js"</span>,
+          <span class="code-string">"Node.js"</span>, <span class="code-string">"TypeScript"</span>],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building things that matter"</span>,
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Computer Science undergraduate</strong> at SRM IST Tiruchirappalli, expected to graduate in 2027.
+            With a strong foundation in modern web technologies, I love crafting full-stack applications
+            that solve real-world problems.
+          </p>
+          <p>
+            My journey spans from building AI-powered platforms and real-time gesture detection systems
+            to full-stack tournament dashboards and healthcare management tools.
+            I thrive at the intersection of <strong>clean architecture</strong> and <strong>user-centric design</strong>.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-count="4">0</span><span class="accent">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="8">0</span><span class="accent">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="1">0</span>
+              <span class="stat-label">Internship</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>B.Tech CSE, SRM IST</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>SRM Tiruchirappalli, India</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>pm4799@srmist.edu.in</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-heart"></i>
+            <div>
+              <h4>Interests</h4>
+              <p>Full Stack &amp; Web Dev</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>Software Developer Intern</h3>
+                <p class="exp-company">Vadoo Internet Services Private Limited</p>
+              </div>
+              <div class="exp-meta">
+                <span class="badge">Internship</span>
+                <span class="exp-date"><i class="fas fa-calendar-alt"></i> Jun 2025 – Jul 2025</span>
+                <span class="exp-location"><i class="fas fa-map-pin"></i> Remote</span>
+              </div>
+            </div>
+            <ul class="exp-details">
+              <li>Built a mobile-friendly web interface for <strong>Muapi</strong>, an AI image generation platform</li>
+              <li>Integrated multiple image generation APIs and connected model endpoints to the frontend</li>
+              <li>Enabled real-time AI image creation with seamless user experience</li>
+            </ul>
+            <a href="#" class="exp-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Work Showcase</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/PushkalMatcha" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">CODM Tournament Platform</h3>
+          <p class="project-desc">
+            Full-stack tournament management platform for Call of Duty Mobile players with authentication,
+            protected routes, and dynamic tournament dashboards.
+          </p>
+          <div class="project-tags">
+            <span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span>
+          </div>
+          <span class="project-date">Feb 2025 – Mar 2025</span>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-hand-pointer"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/PushkalMatcha" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Gesture-Based Object Detection</h3>
+          <p class="project-desc">
+            Real-time gesture-controlled object detection system using YOLOv5, MediaPipe, and OpenCV.
+            Detects hand landmarks, calculates pointing direction, and highlights objects in real time.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>YOLOv5</span><span>PyTorch</span>
+          </div>
+          <span class="project-date">Jan 2025 – Feb 2025</span>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/PushkalMatcha" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Healthcare Volunteer System</h3>
+          <p class="project-desc">
+            Full-stack healthcare volunteer management platform to coordinate volunteers, patients,
+            and administrators with scheduling, real-time notifications, and analytics.
+          </p>
+          <div class="project-tags">
+            <span>Next.js 14</span><span>TypeScript</span><span>Node.js</span><span>Express</span>
+            <span>PostgreSQL</span><span>Docker</span><span>Prisma</span>
+          </div>
+          <span class="project-date">Mar 2026 – Apr 2026</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span class="accent">Technologies</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TS" width="18"/><span>TypeScript</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="18"/><span>C++</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-react"></i><span>React.js</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next" width="18"/><span>Next.js</span></div>
+            <div class="skill-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" width="18" style="filter:invert(1)"/><span>Express.js</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TW" width="18"/><span>Tailwind CSS</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools &amp; Tech</h3>
+          <div class="skill-items">
+            <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+            <div class="skill-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PG" width="18"/><span>PostgreSQL</span></div>
+            <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="SB" width="18"/><span>Supabase</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <div class="education-grid">
+
+        <div class="edu-card glass-card">
+          <div class="edu-year">2027</div>
+          <h3>SRM IST – Trichy</h3>
+          <p class="edu-degree">B.Tech – Computer Science &amp; Engineering</p>
+          <p class="edu-score"><i class="fas fa-chart-line"></i> CGPA: 8.54 / 10</p>
+        </div>
+
+        <div class="edu-card glass-card">
+          <div class="edu-year">2023</div>
+          <h3>Sri Vasavi Junior College</h3>
+          <p class="edu-degree">Class XII – State Board</p>
+          <p class="edu-score"><i class="fas fa-chart-line"></i> Percentage: 87.5%</p>
+        </div>
+
+        <div class="edu-card glass-card">
+          <div class="edu-year">2021</div>
+          <h3>Little Angels School</h3>
+          <p class="edu-degree">Class X – CBSE</p>
+          <p class="edu-score"><i class="fas fa-chart-line"></i> Percentage: 82%</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm currently looking for new opportunities and my inbox is always open.
+            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:pm4799@srmist.edu.in" class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <span>pm4799@srmist.edu.in</span>
+              </div>
+            </a>
+            <a href="tel:+918247249549" class="contact-method">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <span>+91 8247249549</span>
+              </div>
+            </a>
+            <a href="https://github.com/PushkalMatcha" target="_blank" class="contact-method">
+              <i class="fab fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <span>PushkalMatcha</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Pushkal Sanjay Naidu. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/PushkalMatcha" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -22,4 +22,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync . portfolio-pushkal --delete
+          aws s3 sync . s3://portfolio-pushkal --delete

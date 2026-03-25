@@ -188,8 +188,28 @@ function initTypingEffect() {
   }, 600);
 }
 
+// ===== API Counter =====
+function fetchCount() {
+  const countEl = document.getElementById('count');
+  if (!countEl) return;
+
+  fetch('https://kcabifhpy7.execute-api.ap-south-1.amazonaws.com')
+    .then((res) => res.json())
+    .then((data) => {
+      const value = Number(data);
+      if (!Number.isFinite(value)) return;
+
+      countEl.setAttribute('data-count', String(value));
+      countEl.innerText = String(value);
+    })
+    .catch((err) => {
+      console.error('Failed to fetch count:', err);
+    });
+}
+
 // ===== Initialize =====
 document.addEventListener('DOMContentLoaded', () => {
+  fetchCount();
   initRevealElements();
   revealOnScroll();
   animateCounters();

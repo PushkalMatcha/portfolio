@@ -190,21 +190,12 @@ function initTypingEffect() {
 
 // ===== API Counter =====
 function fetchCount() {
-  const countEl = document.getElementById('count');
-  if (!countEl) return;
-
-  fetch('https://kcabifhpy7.execute-api.ap-south-1.amazonaws.com')
-    .then((res) => res.json())
-    .then((data) => {
-      const value = Number(data);
-      if (!Number.isFinite(value)) return;
-
-      countEl.setAttribute('data-count', String(value));
-      countEl.innerText = String(value);
+  fetch('https://kcabifhpy7.execute-api.ap-south-1.amazonaws.com/visit')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('count').innerText = data;
     })
-    .catch((err) => {
-      console.error('Failed to fetch count:', err);
-    });
+    .catch(err => console.error(err));
 }
 
 // ===== Initialize =====
